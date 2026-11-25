@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookBridge - Add Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>📚 BookBridge</h1>
+      <p>Add Your Book</p>
+    </header>
+
+    <main>
+      <div class="form-box">
+        <h2>Add a Book</h2>
+
+        <label for="bookTitle" class="visually-hidden">Book Title</label>
+        <input type="text" id="bookTitle" placeholder="Book Title" />
+
+        <label for="bookAuthor" class="visually-hidden">Author</label>
+        <input type="text" id="bookAuthor" placeholder="Author" />
+
+        <label for="bookGenre" class="visually-hidden">Genre</label>
+        <input type="text" id="bookGenre" placeholder="Genre" />
+
+        <button onclick="addBook()">Add Book</button>
+
+        <p>
+          <a href="index.html">← Back to Home</a>
+        </p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

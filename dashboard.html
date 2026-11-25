@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BookBridge - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>📚 BookBridge</h1>
+
+      <p>Student Dashboard</p>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="addbook.html">Add Book</a>
+        <a href="mybooks.html">My Books</a>
+        <a href="requests.html">Requests</a>
+        <a href="chat.html">Chat</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button type="button" onclick="logout()">Logout</button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="form-box">
+        <h2>Welcome, <span id="studentName"></span> 👋</h2>
+
+        <hr />
+
+        <h3>📚 My Books</h3>
+
+        <p id="bookCount">0 books added</p>
+
+        <br />
+
+        <h3>📩 Requests</h3>
+
+        <p id="requestCount">0 requests</p>
+
+        <br />
+
+        <button onclick="window.location.href = 'addbook.html'">
+          ➕ Add Book
+        </button>
+
+        <button onclick="window.location.href = 'index.html'">
+          📖 Browse Books
+        </button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
